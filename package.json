@@ -9,12 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "bootstrap": "^5.3.2",
+    "express": "^4.18.2",
+    "next": "13.5.6",
     "react": "^18",
+    "react-bootstrap": "^2.9.0",
     "react-dom": "^18",
-    "next": "13.5.6"
+    "react-hotkeys-hook": "^4.4.1",
+    "shortid": "^2.2.16",
+    "sweetalert2": "^11.6.13"
   },
   "devDependencies": {
     "eslint": "^8",
-    "eslint-config-next": "13.5.6"
+    "eslint-config-next": "13.5.6",
+    "nodemon": "^3.0.1"
   }
 }
