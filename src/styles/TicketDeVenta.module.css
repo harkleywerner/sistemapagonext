@@ -1,0 +1,105 @@
+.ticket {
+    visibility: hidden;
+    background-color: white;
+    border-bottom: 2px dashed #555;
+    left: 0%;
+    top: 0%;
+
+}
+
+
+
+@media print {
+
+
+    .ticket *,
+    .ticket {
+        visibility: visible;
+        font-size: 12px;
+    }
+
+    /*Numero de Ticket*/
+    .numeroDeTicket {
+        font-size: 18px;
+    }
+
+
+    /*Informacio Adicional*/
+
+    .informacionAdicional {
+        border-top: 2px dashed #555;
+
+    }
+
+    .informacionAdicional p {
+        font-size: 13px;
+        font-weight: 500;
+        color: #555;
+    }
+
+    .cajero {
+        font-size: 15px;
+    }
+
+    /*Lista De Productos*/
+
+    .listaDeProductos {
+        border-bottom: 2px dashed #555;
+        border-top: 2px dashed #555;
+        word-break: break-all;
+    }
+
+    .nombreDelProducto {
+        font-size: 13px;
+        color: #555;
+    }
+
+    .contenedorCantidad p:nth-child(1){
+       min-width: 45px;
+    }
+    .contenedorCantidad p:nth-child(3) {
+        color: #555;
+        font-weight: 500;
+    }
+
+    .totalDelProducto {
+        border-bottom: 2px dashed #555;
+        width: fit-content;
+    }
+
+    .totalDelProducto span:nth-child(2) {
+        color: #555;
+        font-weight: 500;
+    }
+
+
+    /*Totales Finales*/
+    .totales {
+        border-bottom: 2px dashed #555;
+    }
+
+    .rowTotal {
+        word-break: break-all;
+    }
+
+    .rowTotal div:nth-child(1) {
+        max-width: 60%;
+    }
+
+    .rowTotal div:nth-child(2) {
+        max-width: 40%;
+        font-weight: 500;
+        color: #555;
+    }
+
+    .mensajeInformativo h4 {
+        font-size: 13px;
+    }
+
+}
+
+@page {
+    size: auto;
+    margin: 0cm;
+    margin-top: -1.5cm;
+}

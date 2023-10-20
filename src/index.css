@@ -1,0 +1,65 @@
+* {
+    outline: none;
+    user-select: none;
+    transition: 0s all;
+
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+}
+
+:root {
+    --lineaPunteada: 2px dotted #ccc;
+
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollHidden {
+    overflow: overlay;
+}
+
+.scrollHidden::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+.scrollBarPersonalizada {
+    overflow-y: overlay;
+
+}
+
+.scrollBarPersonalizada::-webkit-scrollbar {
+    width: 0.5em;
+    /* Ajusta el ancho de la barra de desplazamiento vertical */
+    height: 0.5em;
+}
+
+.scrollBarPersonalizada::-webkit-scrollbar:vertical {
+    width: 5px;
+}
+
+.scrollBarPersonalizada::-webkit-scrollbar-button:increment,
+.scrollBarPersonalizada::-webkit-scrollbar-button {
+    display: none;
+}
+
+.scrollBarPersonalizada::-webkit-scrollbar:horizontal {
+    height: 5px;
+}
+
+.scrollBarPersonalizada::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid transparent;
+}
+
+.scrollBarPersonalizada::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
